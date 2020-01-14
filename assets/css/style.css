@@ -1,0 +1,132 @@
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+}
+
+.sidebar{
+    display: inline-block;
+    overflow: hidden;
+    height: 100%;
+    vertical-align: top;
+    background-image: url("../images/sidebarBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    top: auto;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+#sidebarBack{
+    overflow-x: hidden;
+    background: rgba(88, 88, 88, 0.897);
+    height: 100%;
+    margin-right: -2px;
+}
+
+#profPic{
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.workTitle{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.workTitle h2{
+    font-weight: bold;
+}
+
+#sidebarLinks{
+    margin-top: 30%;
+}
+
+#mainName{
+    margin-left: 20px;
+}
+
+#sidebarLinks a{
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#homeRow{
+    background-image: url("../images/homeBackground.jpeg");
+}
+
+#page{
+    height: 100%;
+}
+
+#mainRow{
+    background: rgba(88, 88, 88, 0.897);
+}
+
+#mainCol{
+    background-image: url("../images/homeBackground.jpeg");
+}
+
+
+@media screen and (max-width: 900px){
+    .sidebar {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        top: 0;
+        text-align: center;
+      }
+      .sidebar a {
+        text-align: center;
+        float: none;
+        margin: 10px;
+        display: inline!important;
+    }
+    #sidebarLinks{
+        margin-bottom: 20px;
+        margin-top: -10px;
+    }
+
+    #profPic{
+        display: none;
+    }
+    .workTitle{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    #sidebarLinks{
+    text-align: center;
+    width: 100%;
+    height: 205px;
+    position: relative;
+    top: 0;
+    }
+
+
+    .sidebar a {
+        text-align: center;
+        float: none;
+        margin: 10px;
+        display: block!important;
+    }
+
+    #sidebarLinks{
+        margin-top: -20px;
+    }
+    
+}
